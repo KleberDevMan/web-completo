@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Curso HTML5 Essencial</title>
+        
+        <link href="css/estilo.css" rel="stylesheet" media="screen">
+
+        <script>
+            function mostraResultado() {
+                document.getElementById("resultado").innerHTML = document.getElementById("cachorros").value;
+            }
+        </script>    
+    </head>
+
+    <body>
+        <!-- recomenda-se o preenchimento obrigatorio de campos via java script -->
+
+        <!--  -->
+        <h2>Formulário</h2>
+        <form action="post">
+            <!-- requerid (javascript) -->
+            <input type="text" placeholder="nome" name="nome" id="nome" maxlength="30" required> 
+            
+            <label for="tel">Telefone</label>
+            <input type="tel" autofocus name="tel" id="tel">
+            
+            <label for="mail">Email</label>
+            <input type="email" name="mail" id="mail">
+
+            <label for="website">WebSite</label>
+            <input name="website" id="website" type="url">
+
+            <input name="filhos" id="filhos" type="number" placeholder="filhos">
+
+            <!-- date (jquery) -->
+            <input type="date" name="date" id="date">
+
+            <!-- data list (filtra opcoes) -->
+            <input type="text" list="lojas" name="nome" placeholder="digite o nome da loja" id="nome">
+            <datalist id="lojas">
+                <option value="Centauro">Centauro</option>
+                <option value="Netshoes">Netshoes</option>
+                <option value="Americanas">Americanas</option>
+            </datalist>
+
+            <!-- range (slide) -->
+            <!-- occhanege (sempre que mudar) -->
+            <input type="range" id="cachorros" name="cachorros" min="1" max="5" value="1" onchange="mostraResultado()">
+            <span id="resultado"></span>
+
+            <!-- seach (só sematinca) -->
+            <input type="search" name="pesquisa">
+
+            <!-- btn -->
+            <input type="submit" value="Enviar" id="enviar" name="enviar">
+        </form>
+    
+    </body>
+</html>
