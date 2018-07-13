@@ -1,3 +1,9 @@
 
-- fontes precisam estar na maquina do cliete
+- importar fontes do google fontes
+- bug na url da font (tirar os espacos em brancos)
+
+- tamanha de fontes:
+    - unidade absoluta: 12px
+    - unidade relativa: 1em ou 100% ; 2em ou 200%
+-
 
