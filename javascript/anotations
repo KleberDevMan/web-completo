@@ -1,0 +1,4 @@
+
+metodos matematicos
+- Math.roud(); //arredonda
+- ().toFixed(2); //determina o n° de casas decimais

@@ -5,5 +5,4 @@
 - tamanha de fontes:
     - unidade absoluta: 12px
     - unidade relativa: 1em ou 100% ; 2em ou 200%
--
 
